@@ -1,12 +1,12 @@
 name = "social-backup"
 main = "functions/scheduled.ts"
-
+pages_build_output_dir = "dist"
 compatibility_date = "2024-02-22"
 
-kv_namespaces = [
-  { binding = "SETTINGS", id = "settings" },
-  { binding = "BACKUP_STATUS", id = "backup_status" }
-]
+# kv_namespaces = [
+#   { binding = "SETTINGS", id = "settings" },
+#   { binding = "BACKUP_STATUS", id = "backup_status" },
+# ]
 
 [triggers]
 crons = ["0 */2 * * *"]
